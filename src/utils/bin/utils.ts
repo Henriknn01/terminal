@@ -20,15 +20,15 @@ export const date = async (args: string[]): Promise<string> => {
 };
 
 export const gui = async (args: string[]): Promise<string> => {
-  window.open('https://m4tt72.com', '_self');
+  window.open('https://wgetheaders.com', '_self');
 
   return 'Opening GUI version...';
 };
 
 export const email = async (args: string[]): Promise<string> => {
-  window.open('mailto:hi@nm4tt72.com');
+  window.open('mailto:hi@wgetheaders.com');
 
-  return 'Opening mailto:hi@m4tt72.com...';
+  return 'Opening mailto:hi@wgetheaders.com...';
 };
 
 export const vi = async (args: string[]): Promise<string> => {
@@ -51,6 +51,7 @@ export const sudo = async (args?: string[]): Promise<string> => {
   return `Permission denied: unable to run the command '${args[0]}' as root.`;
 };
 
+/*
 export const repo = async (args?: string[]): Promise<string> => {
   setTimeout(function () {
     window.open('https://github.com/m4tt72/terminal', '_blank');
@@ -58,6 +59,7 @@ export const repo = async (args?: string[]): Promise<string> => {
 
   return 'Opening repository...';
 };
+ */
 
 export const donate = async (args?: string[]): Promise<string> => {
   window.open(packageJson.funding.url, '_blank');
@@ -67,20 +69,15 @@ export const donate = async (args?: string[]): Promise<string> => {
 
 export const banner = (args?: string[]): string => {
   return `
-███╗   ███╗██╗  ██╗████████╗████████╗███████╗██████╗
-████╗ ████║██║  ██║╚══██╔══╝╚══██╔══╝╚════██║╚════██╗
-██╔████╔██║███████║   ██║      ██║       ██╔╝ █████╔╝
-██║╚██╔╝██║╚════██║   ██║      ██║      ██╔╝ ██╔═══╝
-██║ ╚═╝ ██║     ██║   ██║      ██║      ██║  ███████╗
-╚═╝     ╚═╝     ╚═╝   ╚═╝      ╚═╝      ╚═╝  ╚══════╝ v${packageJson.version}
+
+██╗    ██╗ ██████╗ ███████╗████████╗    ██╗  ██╗███████╗ █████╗ ██████╗ ███████╗██████╗ ███████╗
+██║    ██║██╔════╝ ██╔════╝╚══██╔══╝    ██║  ██║██╔════╝██╔══██╗██╔══██╗██╔════╝██╔══██╗██╔════╝
+██║ █╗ ██║██║  ███╗█████╗     ██║       ███████║█████╗  ███████║██║  ██║█████╗  ██████╔╝███████╗
+██║███╗██║██║   ██║██╔══╝     ██║       ██╔══██║██╔══╝  ██╔══██║██║  ██║██╔══╝  ██╔══██╗╚════██║
+╚███╔███╔╝╚██████╔╝███████╗   ██║       ██║  ██║███████╗██║  ██║██████╔╝███████╗██║  ██║███████║
+ ╚══╝╚══╝  ╚═════╝ ╚══════╝   ╚═╝       ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚═════╝ ╚══════╝╚═╝  ╚═╝╚══════╝ v${packageJson.version}
 
 Type 'help' to see list of available commands.
 
---
-The project is open-source 🎉 type 'repo' to check out the repository.
-
-New 🎉: Try out the new 'theme' command. See all available themes <a href="https://github.com/m4tt72/terminal/tree/master/docs/themes">in the docs</a>.
-New 🎉: New command 'neofetch', for you linux.
---
 `;
 };
