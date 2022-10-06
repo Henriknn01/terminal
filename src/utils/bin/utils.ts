@@ -25,14 +25,6 @@ export const gui = async (args: string[]): Promise<string> => {
   return 'Opening GUI version...';
 };
 
-/*
-export const email = async (args: string[]): Promise<string> => {
-  window.open('mailto:hi@wgetheaders.com');
-
-  return 'Opening mailto:hi@wgetheaders.com...';
-};
-*/
-
 export const vi = async (args: string[]): Promise<string> => {
   return `why use vi? try 'emacs'.`;
 };
@@ -68,19 +60,6 @@ export const donate = async (args?: string[]): Promise<string> => {
 
   return 'Opening donation url...';
 };*/
-
-export const writeups = (args?: string[]): string => {
-  return `
-
- ██████╗ ██████╗ ███╗   ███╗██╗███╗   ██╗ ██████╗     ███████╗ ██████╗  ██████╗ ███╗   ██╗  TM
-██╔════╝██╔═══██╗████╗ ████║██║████╗  ██║██╔════╝     ██╔════╝██╔═══██╗██╔═══██╗████╗  ██║
-██║     ██║   ██║██╔████╔██║██║██╔██╗ ██║██║  ███╗    ███████╗██║   ██║██║   ██║██╔██╗ ██║
-██║     ██║   ██║██║╚██╔╝██║██║██║╚██╗██║██║   ██║    ╚════██║██║   ██║██║   ██║██║╚██╗██║
-╚██████╗╚██████╔╝██║ ╚═╝ ██║██║██║ ╚████║╚██████╔╝    ███████║╚██████╔╝╚██████╔╝██║ ╚████║
- ╚═════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝     ╚══════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝
-
-`;
-};
 
 export const banner = (args?: string[]): string => {
   return `

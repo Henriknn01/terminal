@@ -9,6 +9,19 @@ export const getProjects = async () => {
   return data;
 };
 
+export const getWriteups = async () => {
+  const { data } = await axios.get(
+    `https://api.github.com/repos/wget-headers/writeups/contents/`,
+  );
+  return data;
+};
+export const getCtfChallenges = async (ctf: string) => {
+  const { data } = await axios.get(
+    `https://api.github.com/repos/wget-headers/writeups/contents/${ctf}`,
+  );
+  return data;
+};
+
 export const getBio = async () => {
   const { data } = await axios.get(config.bioUrl);
 
